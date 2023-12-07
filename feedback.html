@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback for Polaroid Cameras</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    /*Body styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+     Header styles 
+    header {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: peru;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: orchid;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #b12323;
+    }
+
+    input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer p {
+        margin: 0;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="company.html">Company</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Share Your Feedback</h1>
+        <section id="feedback">
+            <div class="container">
+                <h2>Customer Advice</h2>
+                <div id="comments">
+                    <!-- Existing comments will be displayed here -->
+                </div>
+                <form id="commentForm">
+                    <label for="username">Your Name:</label>
+                    <input type="text" id="username" required>
+                    <label for="commentText">Your Comment:</label>
+                    <textarea id="commentText" rows="4" required></textarea>
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Feedback Form</h2>
+            <form id="feedbackForm" action="submit_feedback.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+                
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Contact us at contact@polaroid.com</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

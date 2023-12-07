@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Polaroid Cameras</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    /* Body styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    
+    header {
+        background-color: #fff;
+        box-shadow: 0 2px 4px cyan;
+        padding: 15px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: green;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+        color: #333;
+        text-decoration: underline;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer p {
+        margin: 0;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="company.html">Company</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Polaroid Cameras</h1>
+        <!--  introductory text or any highlights-->
+        <p>Explore the world of instant photography with our range of Polaroid cameras!
+            <!----- images or any call-to-action buttons -->
+        <img src="polarid camera image.jpeg" alt="Polaroid Cameras">
+        <img src="instant camera.jpg" alt="Polaroid Camera2">
+        <img src="film camera.jpg" alt="Polaroid Camera3">
+        
+        <button onclick="addToCart('Polaroid Camera')">Add to Cart</button>
+        
+        <p>Learn more about our <a href="promotion.html">current promotion</a> or read <a href="about.html">more about our products</a>.</p>
+    </main>
+    <footer>
+        <p>Contact us at contact@polaroid.com</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+       
+        function addToCart(itemName) {
+            
+            alert(itemName + " added to cart!");
+            
+        }
+    </script>
+</body>
+</html>
